@@ -46,13 +46,13 @@ const Contact = () => {
   return (
     <main className="pt-8">
       {/* Hero Section */}
-      <section className="py-20 hero-gradient">
+      <section className="py-20 bg-primary-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6 text-lg px-6 py-2">
+            <Badge className="mb-6 text-base px-6 py-2 bg-white text-primary border-0">
               Contact Us
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">
               Get in Touch Today
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -70,7 +70,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold gradient-text mb-6">
+                <h2 className="text-3xl font-bold text-primary mb-6">
                   Visit Our Campus
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
@@ -84,7 +84,7 @@ const Contact = () => {
                 <Card className="p-6 shadow-soft">
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0 shadow-medium">
+                      <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0 shadow-soft">
                         <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -101,7 +101,7 @@ const Contact = () => {
                 <Card className="p-6 shadow-soft">
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center flex-shrink-0 shadow-medium">
+                      <div className="w-12 h-12 bg-success rounded-xl flex items-center justify-center flex-shrink-0 shadow-soft">
                         <Phone className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -128,7 +128,7 @@ const Contact = () => {
                 <Card className="p-6 shadow-soft">
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-accent-warm to-accent rounded-full flex items-center justify-center flex-shrink-0 shadow-medium">
+                      <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-soft">
                         <Mail className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -147,7 +147,7 @@ const Contact = () => {
                 <Card className="p-6 shadow-soft">
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center flex-shrink-0 shadow-medium">
+                      <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0 shadow-soft">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -167,7 +167,7 @@ const Contact = () => {
             <div>
               <Card className="p-8 shadow-medium">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold gradient-text flex items-center gap-2">
+                  <CardTitle className="text-2xl font-bold text-primary flex items-center gap-2">
                     <Calendar className="w-6 h-6" />
                     Send Inquiry
                   </CardTitle>
@@ -268,7 +268,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold gradient-text mb-4">
+              <h2 className="text-4xl font-bold text-primary mb-4">
                 Find Us on the Map
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -298,14 +298,14 @@ const Contact = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold gradient-text mb-8">
+            <h2 className="text-4xl font-bold text-primary mb-8">
               What Happens Next?
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="p-6 shadow-soft">
                 <CardContent className="pt-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-medium">
+                  <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-soft">
                     <span className="text-white font-bold text-xl">1</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-3">We'll Contact You</h3>
@@ -317,7 +317,7 @@ const Contact = () => {
               
               <Card className="p-6 shadow-soft">
                 <CardContent className="pt-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-medium">
+                  <div className="w-16 h-16 bg-success rounded-xl flex items-center justify-center mx-auto mb-4 shadow-soft">
                     <span className="text-white font-bold text-xl">2</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Schedule a Visit</h3>
@@ -329,7 +329,7 @@ const Contact = () => {
               
               <Card className="p-6 shadow-soft">
                 <CardContent className="pt-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent-warm to-accent rounded-full flex items-center justify-center mx-auto mb-4 shadow-medium">
+                  <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-soft">
                     <span className="text-white font-bold text-xl">3</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Begin the Journey</h3>

@@ -38,13 +38,13 @@ const About = () => {
   return (
     <main className="pt-8">
       {/* Hero Section */}
-      <section className="py-20 hero-gradient">
+      <section className="py-20 bg-primary-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6 text-lg px-6 py-2">
+            <Badge className="mb-6 text-base px-6 py-2 bg-white text-primary border-0">
               About Indian Public School
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">
               Our Story of Excellence
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -62,7 +62,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <Card className="p-8 shadow-medium">
               <CardHeader>
-                <CardTitle className="text-3xl font-bold gradient-text text-center mb-6">
+                <CardTitle className="text-3xl font-bold text-primary text-center mb-6">
                   Our Story
                 </CardTitle>
               </CardHeader>
@@ -96,10 +96,10 @@ const About = () => {
             {/* Vision */}
             <Card className="p-8 shadow-soft hover:shadow-medium transition-smooth">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center mb-4 shadow-medium">
+                <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-soft">
                   <Eye className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-3xl font-bold gradient-text">Our Vision</CardTitle>
+                <CardTitle className="text-3xl font-bold text-primary">Our Vision</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -113,10 +113,10 @@ const About = () => {
             {/* Mission */}
             <Card className="p-8 shadow-soft hover:shadow-medium transition-smooth">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center mb-4 shadow-medium">
+                <div className="w-16 h-16 bg-success rounded-xl flex items-center justify-center mb-4 shadow-soft">
                   <Target className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-3xl font-bold gradient-text">Our Mission</CardTitle>
+                <CardTitle className="text-3xl font-bold text-success">Our Mission</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -135,7 +135,7 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               Our Core Values
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -149,7 +149,7 @@ const About = () => {
               <Card key={index} className="p-6 shadow-soft hover:shadow-medium transition-smooth">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-accent-warm to-accent rounded-full flex items-center justify-center flex-shrink-0 shadow-medium">
+                    <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-soft">
                       <value.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -165,10 +165,10 @@ const About = () => {
       </section>
 
       {/* Commitment */}
-      <section className="py-20 bg-gradient-to-br from-primary to-secondary text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-8 shadow-strong">
+            <div className="w-20 h-20 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-8 shadow-large">
               <Globe className="w-10 h-10 text-white" />
             </div>
             
@@ -185,19 +185,25 @@ const About = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
-                <Award className="w-12 h-12 mx-auto mb-4 text-accent" />
+                <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-soft">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
                 <h3 className="text-xl font-semibold mb-2">Quality Education</h3>
-                <p className="opacity-90">PSEB-affiliated curriculum with modern teaching methods</p>
+                <p className="text-white/90">PSEB-affiliated curriculum with modern teaching methods</p>
               </div>
               <div className="text-center">
-                <Users className="w-12 h-12 mx-auto mb-4 text-accent" />
+                <div className="w-16 h-16 bg-success rounded-xl flex items-center justify-center mx-auto mb-4 shadow-soft">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
                 <h3 className="text-xl font-semibold mb-2">Expert Faculty</h3>
-                <p className="opacity-90">Passionate teachers dedicated to student success</p>
+                <p className="text-white/90">Passionate teachers dedicated to student success</p>
               </div>
               <div className="text-center">
-                <Heart className="w-12 h-12 mx-auto mb-4 text-accent" />
+                <div className="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-soft">
+                  <Heart className="w-8 h-8 text-white" />
+                </div>
                 <h3 className="text-xl font-semibold mb-2">Caring Environment</h3>
-                <p className="opacity-90">Safe, nurturing space for learning and growth</p>
+                <p className="text-white/90">Safe, nurturing space for learning and growth</p>
               </div>
             </div>
           </div>

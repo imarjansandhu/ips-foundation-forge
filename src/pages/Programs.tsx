@@ -150,13 +150,13 @@ const Programs = () => {
   return (
     <main className="pt-8">
       {/* Hero Section */}
-      <section className="py-20 hero-gradient">
+      <section className="py-20 bg-primary-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6 text-lg px-6 py-2">
+            <Badge className="mb-6 text-base px-6 py-2 bg-white text-primary border-0">
               Academic Programs
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">
               Nurturing Growth at Every Stage
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -172,7 +172,7 @@ const Programs = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               Our Academic Programs
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -186,14 +186,14 @@ const Programs = () => {
               <Card key={index} className="p-6 shadow-soft hover:shadow-medium transition-smooth group">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
-                    <div className={`w-14 h-14 bg-gradient-to-br ${program.color} rounded-xl flex items-center justify-center shadow-medium group-hover:scale-110 transition-bounce`}>
+                    <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center shadow-soft group-hover:scale-110 transition-bounce">
                       <program.icon className="w-7 h-7 text-white" />
                     </div>
                     <Badge variant="outline" className="text-sm">
                       {program.ageGroup}
                     </Badge>
                   </div>
-                  <CardTitle className="text-2xl font-bold gradient-text">
+                  <CardTitle className="text-2xl font-bold text-primary">
                     {program.level}
                   </CardTitle>
                   <p className="text-muted-foreground">{program.description}</p>
@@ -219,7 +219,7 @@ const Programs = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold gradient-text mb-6">
+            <h2 className="text-4xl font-bold text-primary mb-6">
               Beyond Academics
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -232,7 +232,7 @@ const Programs = () => {
             {specialPrograms.map((program, index) => (
               <Card key={index} className="text-center p-8 shadow-soft hover:shadow-medium transition-smooth">
                 <CardContent className="pt-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent-warm to-accent rounded-full flex items-center justify-center mx-auto mb-6 shadow-medium">
+                  <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-6 shadow-soft">
                     <program.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold mb-4">{program.title}</h3>
@@ -250,7 +250,7 @@ const Programs = () => {
           <div className="max-w-4xl mx-auto">
             <Card className="p-8 shadow-medium">
               <CardHeader className="text-center">
-                <CardTitle className="text-3xl font-bold gradient-text mb-4">
+                <CardTitle className="text-3xl font-bold text-primary mb-4">
                   Our Learning Approach
                 </CardTitle>
               </CardHeader>
@@ -302,13 +302,13 @@ const Programs = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-primary to-secondary text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Enroll Your Child?
             </h2>
-            <p className="text-xl mb-8 opacity-90 leading-relaxed">
+            <p className="text-xl mb-8 text-white/90 leading-relaxed">
               Give your child the best start in their educational journey. 
               Contact us today to learn more about our admission process and 
               schedule a visit to see our programs in action.
@@ -317,9 +317,8 @@ const Programs = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 asChild 
-                variant="secondary" 
                 size="lg"
-                className="shadow-strong text-lg px-8 py-6"
+                className="bg-accent hover:bg-accent-hover text-white shadow-medium text-lg px-8 py-6 border-0"
               >
                 <Link to="/contact">Start Admission Process</Link>
               </Button>
@@ -327,7 +326,7 @@ const Programs = () => {
                 asChild 
                 variant="outline" 
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary shadow-medium text-lg px-8 py-6"
+                className="border-white text-white hover:bg-white hover:text-primary shadow-soft text-lg px-8 py-6"
               >
                 <Link to="/why-choose-us">Why Choose IPS?</Link>
               </Button>

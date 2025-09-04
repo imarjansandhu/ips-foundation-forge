@@ -2,64 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Indian Public School Design System - Child-friendly, warm, and professional */
+/* Indian Public School Design System - Modern, Clean, Professional */
 
 @layer base {
   :root {
-    /* Core brand colors - warm and trustworthy */
-    --background: 252 100% 99%;
-    --foreground: 215 25% 27%;
+    /* Clean, modern color palette with solid colors */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
     /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Primary brand - warm blue for trust and stability */
-    --primary: 210 100% 56%;
+    /* Primary - Professional navy blue */
+    --primary: 220 90% 20%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 210 100% 85%;
-    --primary-dark: 210 100% 45%;
+    --primary-light: 220 60% 95%;
+    --primary-hover: 220 90% 16%;
 
-    /* Secondary - nurturing green for growth */
-    --secondary: 142 70% 50%;
+    /* Secondary - Clean gray-blue */
+    --secondary: 217 32% 17%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 142 50% 85%;
+    --secondary-light: 217 32% 96%;
 
-    /* Accent colors - energetic and friendly */
-    --accent: 45 100% 60%;
-    --accent-foreground: 215 25% 27%;
-    --accent-warm: 25 100% 60%;
+    /* Accent - Warm amber for highlights */
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 38 92% 95%;
+    --accent-hover: 38 92% 45%;
+
+    /* Success color - Fresh green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 95%;
 
     /* Muted tones for subtle elements */
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 94%;
-    --ring: 210 100% 56%;
+    --border: 220 13% 91%;
+    --input: 220 13% 94%;
+    --ring: 220 90% 20%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Beautiful gradients for hero sections */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(142 70% 40%));
-    --gradient-warm: linear-gradient(135deg, hsl(var(--accent-warm)), hsl(var(--accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-light)) 0%, hsl(var(--secondary-light)) 100%);
-
-    /* Elegant shadows with brand colors */
-    --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.1);
-    --shadow-medium: 0 8px 30px -8px hsl(var(--primary) / 0.15);
-    --shadow-strong: 0 15px 40px -10px hsl(var(--primary) / 0.2);
+    /* Clean shadows without color tints */
+    --shadow-soft: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 
     /* Smooth transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -79,41 +80,33 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 222 47% 11%;
+    --foreground: 0 0% 100%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 220 60% 95%;
+    --primary-foreground: 220 90% 20%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217 32% 96%;
+    --secondary-foreground: 217 32% 17%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 217 32% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 220 60% 95%;
   }
 }
 
@@ -123,19 +116,23 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
   }
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  .text-brand {
+    @apply text-primary;
   }
 
-  .hero-gradient {
-    background: var(--gradient-hero);
+  .bg-brand {
+    @apply bg-primary;
+  }
+
+  .hero-section {
+    @apply bg-primary-light;
   }
 
   .shadow-soft {
@@ -146,8 +143,12 @@
     box-shadow: var(--shadow-medium);
   }
 
-  .shadow-strong {
-    box-shadow: var(--shadow-strong);
+  .shadow-large {
+    box-shadow: var(--shadow-large);
+  }
+
+  .shadow-xl {
+    box-shadow: var(--shadow-xl);
   }
 
   .transition-smooth {

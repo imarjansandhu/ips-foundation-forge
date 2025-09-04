@@ -49,11 +49,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-medium">
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-soft">
               <span className="text-white font-bold text-xl">IPS</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold gradient-text">Indian Public School</h1>
+              <h1 className="text-xl font-bold text-primary">Indian Public School</h1>
               <p className="text-sm text-muted-foreground">Building Foundations for a Bright Future</p>
             </div>
           </Link>
